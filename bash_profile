@@ -11,7 +11,6 @@ if which tmux 2>&1 >/dev/null; then
 fi
 
 # Fedora Tmux
-tmux attach &> /dev/null
 if [[ ! $TERM =~ screen ]]; then
     exec tmux
 fi
